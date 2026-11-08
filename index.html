@@ -1,5 +1,1479 @@
-<html>
-  <body>
-    <p>Test</p>
-  </body>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Nolan Poisson // Administrateur Systèmes & Réseaux — BTS SIO SISR</title>
+  <meta name="description" content="Portfolio d'ingénierie réseaux et systèmes de Nolan Poisson, étudiant en 2ème année de BTS SIO option SISR au lycée Benjamin Franklin à Orléans.">
+  <meta name="author" content="Nolan Poisson">
+  <meta name="keywords" content="Nolan Poisson, BTS SIO SISR, Administrateur Systèmes et Réseaux, Orléans, Cisco, HP, Linux, Windows Server 2019, Active Directory, Zabbix, GLPI, OPNsense, Nutanix">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nolan Poisson // Administrateur Systèmes & Réseaux">
+  <meta property="og:description" content="Portfolio de Nolan Poisson - BTS SIO option SISR (2ème année), Lycée Benjamin Franklin, Orléans.">
+
+  <!-- Google Fonts : Space Grotesk + Plus Jakarta Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zm2 0v12h12V6H6zm2 2h8v2H8V8zm0 4h5v2H8v-2z'/></svg>">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-body">
+
+  <!-- ==================== TOP TELEMETRY STRIP ==================== -->
+  <aside class="telemetry-bar" aria-label="Informations système">
+    <div class="container telemetry-inner">
+      <div class="telemetry-item">
+        <span class="pulse-dot"></span>
+        <span class="telemetry-label">SYSTEM :</span>
+        <span class="telemetry-val">ONLINE // NODE: ORLÉANS-FR</span>
+      </div>
+      <div class="telemetry-item hide-mobile">
+        <span class="telemetry-label">ROLE :</span>
+        <span class="telemetry-val">FUTUR ADMINISTRATEUR SYSTÈMES & RÉSEAUX</span>
+      </div>
+      <div class="telemetry-item hide-tablet">
+        <span class="telemetry-label">FORMATION :</span>
+        <span class="telemetry-val">BTS SIO SISR (2E ANNÉE)</span>
+      </div>
+      <div class="telemetry-item">
+        <span class="telemetry-label">HEURE :</span>
+        <span class="telemetry-val" id="live-clock">--:--:--</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== HEADER / CAPSULE NAV ==================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-wrapper">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand" aria-label="Retour en haut">
+        <div class="brand-meta">
+          <span class="brand-name">Nolan Poisson</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-menu" aria-label="Navigation du portfolio">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-item active"><span class="nav-num">01.</span>Accueil</a></li>
+          <li><a href="#about" class="nav-item"><span class="nav-num">02.</span>À propos</a></li>
+          <li><a href="#competences" class="nav-item"><span class="nav-num">03.</span>Compétences</a></li>
+          <li><a href="#projets" class="nav-item"><span class="nav-num">04.</span>Stage CND</a></li>
+          <li><a href="#experiences" class="nav-item"><span class="nav-num">05.</span>Expériences</a></li>
+          <li><a href="#formation" class="nav-item"><span class="nav-num">06.</span>Formation</a></li>
+          <li><a href="#veille" class="nav-item"><span class="nav-num">07.</span>Veille</a></li>
+          <li><a href="#qualites-langues" class="nav-item"><span class="nav-num">08.</span>Langues</a></li>
+          <li><a href="#partage" class="nav-item"><span class="nav-num">09.</span>Partage</a></li>
+          <li><a href="#contact" class="nav-item"><span class="nav-num">10.</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-cta-group">
+        <a href="cv.html" class="btn-cyber btn-sm" title="Consulter et télécharger le CV">
+          <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          <span>CV.PDF</span>
+        </a>
+        <a href="#contact" class="btn-cyber btn-primary btn-sm">
+          <span>CONTACT</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="burger-toggle" id="mobile-toggle" aria-label="Menu mobile" aria-expanded="false">
+          <span class="b-line"></span>
+          <span class="b-line"></span>
+          <span class="b-line"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="drawer-header">
+        <span class="drawer-title">// MENU NAVIGATION</span>
+        <span class="drawer-tag">SISR-SYSADMIN</span>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link"><span class="d-idx">01</span> Accueil</a></li>
+        <li><a href="#about" class="drawer-link"><span class="d-idx">02</span> À propos de Nolan</a></li>
+        <li><a href="#competences" class="drawer-link"><span class="d-idx">03</span> Compétences Réseaux & Systèmes</a></li>
+        <li><a href="#projets" class="drawer-link"><span class="d-idx">04</span> Réalisations du Stage CND</a></li>
+        <li><a href="#experiences" class="drawer-link"><span class="d-idx">05</span> Expériences professionnelles</a></li>
+        <li><a href="#formation" class="drawer-link"><span class="d-idx">06</span> Formation Académique</a></li>
+        <li><a href="#veille" class="drawer-link"><span class="d-idx">07</span> Veille Informatique (IA & Cybersécurité)</a></li>
+        <li><a href="#qualites-langues" class="drawer-link"><span class="d-idx">08</span> Qualités & Langues</a></li>
+        <li><a href="#partage" class="drawer-link"><span class="d-idx">09</span> Partage & Enseignements de Veille</a></li>
+        <li><a href="#contact" class="drawer-link"><span class="d-idx">10</span> Me contacter</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="cv.html" class="btn-cyber btn-primary w-100">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>TÉLÉCHARGER LE CV COMPLET (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION (CYBER COCKPIT) ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="cyber-grid-canvas"></div>
+      <div class="cyber-ambient-glow glow-1"></div>
+      <div class="cyber-ambient-glow glow-2"></div>
+
+      <div class="container hero-layout">
+        
+        <!-- Left Column : Headline & Value Proposition -->
+        <div class="hero-content">
+          
+          <div class="hud-tag">
+            <span class="hud-radar"></span>
+            <span class="hud-text">STATUS // DISPONIBLE POUR OPPORTUNITÉS SISR (2E ANNÉE)</span>
+          </div>
+
+          <h1 class="hero-headline">
+            <span class="hero-subhead">// INGÉNIERIE RÉSEAUX, SYSTÈMES & CYBERSÉCURITÉ</span>
+            <span class="hero-name">NOLAN <span class="accent-stroke">POISSON</span></span>
+          </h1>
+
+          <div class="hero-role-strip">
+            <span class="role-badge">FUTUR ADMINISTRATEUR SYSTÈMES & RÉSEAUX</span>
+            <span class="role-loc">📍 ORLÉANS (FR)</span>
+          </div>
+
+          <p class="hero-bio">
+            Étudiant en <strong>deuxième année de BTS SIO option SISR</strong> au lycée Benjamin Franklin à Orléans. Passionné par les infrastructures système et réseau , la cybersécurité, la virtualisation. Je recherche activement des opportunités, projets et expériences pour construire et fiabiliser des environnements informatiques d’entreprise.
+          </p>
+
+          <!-- Quick Matrix Chips -->
+          <div class="stack-strip">
+            <div class="stack-badge">
+              <span class="sb-key">RÉSEAU</span>
+              <span class="sb-val">Cisco • HP • VLAN • Routage • Wireshark</span>
+            </div>
+            <div class="stack-badge">
+              <span class="sb-key">SYSTÈMES</span>
+              <span class="sb-val">Windows Server 2019 • AD DS • Linux</span>
+            </div>
+            <div class="stack-badge">
+              <span class="sb-key">SÉCURITÉ</span>
+              <span class="sb-val">VPN OPNsense • RGPD • Zabbix • GLPI</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projets" class="btn-cyber btn-primary btn-lg">
+              <span>EXPLORER LE STAGE AU CND</span>
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="cv.html" class="btn-cyber btn-outline btn-lg">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <span>TÉLÉCHARGER LE CV (PDF)</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-block">
+              <span class="metric-num">7 SEM.</span>
+              <span class="metric-lbl">STAGE CND (DÉFENSE)</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-block">
+              <span class="metric-num">SISR</span>
+              <span class="metric-lbl">2ÈME ANNÉE EN COURS</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-block">
+              <span class="metric-num">2025</span>
+              <span class="metric-lbl">BAC NSI & MATHS</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-block">
+              <span class="metric-num">100%</span>
+              <span class="metric-lbl">ENGAGÉ & RIGOUREUX</span>
+            </div>
+          </div>
+
+        </div></div>
+    </section>
+
+    <!-- ==================== SECTION 02 : À PROPOS (CYBER BENTO) ==================== -->
+    <section class="section bento-section" id="about">
+      <div class="container">
+        
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 02</span>
+          <h2 class="tech-heading">À PROPOS DE NOLAN POISSON</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Futur administrateur systèmes et réseaux, j'ai acquis une solide expertise grâce à une formation exigeante et une expérience pratique au sein du Commissariat au numérique de défense.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento Tile 1 : Main Bio Story -->
+          <div class="bento-card bento-hero-tile">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="tile-header">
+              <span class="tile-category">PARCOURS & IDENTITÉ</span>
+              <span class="tile-id">[BIO-01]</span>
+            </div>
+            <h3 class="bento-title">Profil</h3>
+            <p class="bento-lead">
+              Actuellement en <strong>deuxième année de BTS SIO option SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong> au lycée Benjamin Franklin à Orléans, je construis mon projet professionnel autour de l’administration systèmes et réseaux, de la virtualisation et de la cybersécurité.
+            </p>
+            <p class="bento-text">
+              Mon apprentissage s’appuie sur une compréhension de chaque couche du réseau : de l'installation physique des équipements et du câblage cuivre jusqu'au paramétrage des <strong>commutateurs et routeurs Cisco/HP</strong>, la gestion des <strong>VLANs</strong>, des <strong>services d'infrastructure Windows Server 2019 (Active Directory, DNS, DHCP)</strong>, et la surveillance par <strong>Zabbix et GLPI</strong>.
+            </p>
+            <div class="bento-quote">
+              « Basé à Orléans, je recherche des opportunités, projets ou expériences pour mettre en pratique mon sens de l’organisation, ma curiosité et ma determination a améliorer la fiabilité d'une infrastructure. »
+            </div>
+            <div class="bento-actions">
+              <a href="#contact" class="btn-cyber btn-primary btn-sm">ME CONTACTER</a>
+              <a href="cv.html" class="btn-cyber btn-outline btn-sm">VOIR LE CV</a>
+            </div>
+          </div>
+
+          <!-- Bento Tile 2 : Établissement de Formation -->
+          <div class="bento-card bento-school-tile">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="tile-header">
+              <span class="tile-category">ÉTABLISSEMENT</span>
+              <span class="tile-id">[EDU-02]</span>
+            </div>
+            <div class="school-content">
+              <span class="school-chip">LYCÉE BENJAMIN FRANKLIN</span>
+              <h4>BTS SIO SISR • 2ème année</h4>
+              <p>Cursus supérieur préparant à la gouvernance, l'administration, le support et la sécurisation des architectures systèmes et réseaux en entreprise.</p>
+            </div>
+            <div class="school-highlights">
+              <span>Réseaux Cisco & HP</span>
+              <span>Windows Server 2019</span>
+              <span>Linux Debian</span>
+              <span>Nutanix</span>
+            </div>
+          </div>
+
+          <!-- Bento Tile 3 : Expérience de Défense -->
+          <div class="bento-card bento-def-tile">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="tile-header">
+              <span class="tile-category">IMMERSION TERRAIN</span>
+              <span class="tile-id">[EXP-03]</span>
+            </div>
+            <div class="def-badge">STAGE DE 7 SEMAINES EN 2026</div>
+            <h4>Commissariat au numérique de défense (CND)</h4>
+            <p>Mise en place intégrale du réseau d'une salle de formation : câblage, switchs/routeurs HP, VM Windows Server sur hyperviseur Lenovo, Active Directory, Zabbix, GLPI et VPN OPNsense.</p>
+            <a href="#projets" class="tile-link">Détails des réalisations CND →</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 03 : COMPÉTENCES (MATRICE TECHNIQUE) ==================== -->
+    <section class="section skills-section" id="competences">
+      <div class="container">
+
+        <div class="section-title-wrap text-center">
+          <span class="tech-sub">// SECTION 03</span>
+          <h2 class="tech-heading">MATRICE DES COMPÉTENCES</h2>
+          <div class="tech-bar center"></div>
+          <p class="tech-lead">
+            Savoir-faire structuré en 7 piliers technologiques et méthodologiques complémentaires, sans compétences superflues ou inventées.
+          </p>
+        </div>
+
+        <div class="matrix-grid">
+          
+          <!-- Pilier 1 : Réseaux & Commutation -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-01</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="6" height="6" rx="1"/>
+                  <rect x="16" y="2" width="6" height="6" rx="1"/>
+                  <rect x="9" y="16" width="6" height="6" rx="1"/>
+                  <path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/>
+                  <line x1="12" y1="13" x2="12" y2="16"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">INFRASTRUCTURE & COMMUTATION</span>
+            <h3 class="mc-title">Réseaux & Protocoles</h3>
+            <ul class="mc-list">
+              <li><strong>Switchs & Routeurs Cisco et HP :</strong> Installation, brassage et configuration en CLI.</li>
+              <li><strong>Services Fondamentaux :</strong> DHCP, DNS, routage statique/dynamique, NAT & PAT.</li>
+              <li><strong>Segmentation :</strong> VLANs, routage inter-VLAN (802.1Q), Spanning Tree Protocol (STP).</li>
+              <li><strong>Filtrage réseau :</strong> Listes de contrôle d’accès (ACL) standard et étendues.</li>
+              <li><strong>Analyse de trames :</strong> Configuration IPv6 et analyse fine de paquets avec Wireshark.</li>
+              <li><strong>Serveur mandataire :</strong> Déploiement et configuration d’un proxy avec Squid.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Cisco</span><span>HP</span><span>VLAN</span><span>Inter-VLAN</span><span>STP</span><span>ACL</span><span>IPv6</span><span>Wireshark</span><span>Squid</span>
+            </div>
+          </div>
+
+          <!-- Pilier 2 : Administration Systèmes -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-02</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">SERVEURS & SYSTÈMES</span>
+            <h3 class="mc-title">Administration Systèmes</h3>
+            <ul class="mc-list">
+              <li><strong>Environnements :</strong> Administration de systèmes Windows (serveurs/clients) et Linux.</li>
+              <li><strong>Active Directory (AD DS) :</strong> Configuration sous Windows Server 2019, gestion des comptes, OU et stratégies de groupe.</li>
+              <li><strong>Partages d’entreprise :</strong> Mise en place de serveurs de fichiers avec autorisations NTFS et droits d’accès stricts.</li>
+              <li><strong>Services de Domaine :</strong> Intégration DNS, baux DHCP et interconnexion de parcs mixtes.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Windows Server 2019</span><span>Active Directory</span><span>Linux Debian</span><span>Serveur de fichiers</span><span>GPO</span>
+            </div>
+          </div>
+
+          <!-- Pilier 3 : Virtualisation -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-03</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">HYPERVISEURS & VMS</span>
+            <h3 class="mc-title">Virtualisation</h3>
+            <ul class="mc-list">
+              <li><strong>Technologie Nutanix :</strong> Virtualisation d’infrastructure et gestion de machines virtuelles.</li>
+              <li><strong>Hyperviseur Lenovo :</strong> Déploiement et exploitation de VMs Windows Server et serveurs Linux sur hyperviseur de serveur physique Lenovo.</li>
+              <li><strong>Dimensionnement :</strong> Gestion des vCPUs, de la mémoire vive allouée et des disques virtuels.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Nutanix</span><span>Hyperviseur Lenovo</span><span>Machines Virtuelles</span><span>Optimisation Ressources</span>
+            </div>
+          </div>
+
+          <!-- Pilier 4 : Cybersécurité & Gouvernance -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-04</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">SÉCURITÉ & CONFORMITÉ</span>
+            <h3 class="mc-title">Cybersécurité</h3>
+            <ul class="mc-list">
+              <li><strong>Tunnel VPN OPNsense :</strong> Configuration complète d’un VPN sur une machine virtuelle Linux avec la solution OPNsense.</li>
+              <li><strong>Sensibilisation IT :</strong> Protection des données, gestion sécurisée de l'identité numérique et hygiène cyber.</li>
+              <li><strong>Conformité légale :</strong> Application des principes du RGPD et protection de la vie privée.</li>
+              <li><strong>Gestion des preuves :</strong> Stratégies de sauvegardes et préservation des preuves électroniques.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>OPNsense</span><span>VPN</span><span>RGPD</span><span>Sauvegardes</span><span>Preuves Électroniques</span><span>ACLs</span>
+            </div>
+            <div class="mc-project-download">
+              <div class="mpd-info">
+                <span class="mpd-badge">DOSSIER P-04 // CYBERSÉCURITÉ</span>
+                <span class="mpd-desc">Téléchargez l'archive des livrables, configurations VPN et documentations cyber (format ZIP).</span>
+              </div>
+              <a href="dossier-p04-cybersecurite.zip" download="dossier-p04-cybersecurite.zip" class="btn-cyber btn-primary btn-sm w-100" title="Télécharger le dossier P-04 Cybersécurité (archive ZIP)">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                <span>TÉLÉCHARGER LE DOSSIER P-04 (.ZIP)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pilier 5 : Supervision & Gestion de Parc -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-05</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">MAINTIEN EN CONDITION OPÉRATIONNELLE</span>
+            <h3 class="mc-title">Gérer le patrimoine informatique Répondre aux incidents et aux demandes d’assistance et d’évolution (Supervision &amp; Parc IT)</h3>
+            <ul class="mc-list">
+              <li><strong>Supervision Zabbix :</strong> Déploiement d'un serveur Zabbix, surveillance temps réel des commutateurs HP, serveurs et déclencheurs d'alertes.</li>
+              <li><strong>Gestion des tickets GLPI :</strong> Installation, structuration de l’assistance utilisateur (helpdesk) et traçabilité des interventions.</li>
+              <li><strong>Inventaire IT :</strong> Suivi méthodique des actifs matériels et logiciels du parc réseau.</li>
+              <li><strong>Maintien Opérationnel (MCO) :</strong> Diagnostic d'incidents, gestion proactive des pannes et continuité de service.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Zabbix</span><span>Monitoring</span><span>GLPI</span><span>Gestion Tickets</span><span>Helpdesk IT</span><span>MCO</span>
+            </div>
+            <div class="mc-project-download">
+              <div class="mpd-info">
+                <span class="mpd-badge">DOSSIER P-05 // SUPERVISION &amp; PARC</span>
+                <span class="mpd-desc">Téléchargez l'archive des procédures d'exploitation, tickets GLPI et supervision (format ZIP).</span>
+              </div>
+              <a href="dossier-p05-supervision-patrimoine.zip" download="dossier-p05-supervision-patrimoine.zip" class="btn-cyber btn-primary btn-sm w-100" title="Télécharger le dossier P-05 Supervision &amp; Parc (archive ZIP)">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                <span>TÉLÉCHARGER LE DOSSIER P-05 (.ZIP)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pilier 6 : Développement & Outils Web -->
+          <div class="matrix-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-06</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">PROGRAMMATION & BASES DE DONNÉES</span>
+            <h3 class="mc-title">Développement</h3>
+            <ul class="mc-list">
+              <li><strong>Langage Java :</strong> Programmation applicative sous l’environnement Eclipse IDE.</li>
+              <li><strong>Scripts & Web :</strong> Développement en PHP, structuration HTML5 et stylisation CSS3.</li>
+              <li><strong>Bases de données SQL :</strong> Conception de modèles relationnels et requêtes sous MySQL.</li>
+              <li><strong>Logique & Algorithmique :</strong> Acquis solides consolidés en spécialité NSI.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Java</span><span>Eclipse</span><span>PHP</span><span>SQL / MySQL</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+
+          <!-- Pilier 7 : Travail en Mode Projet -->
+          <div class="matrix-card matrix-card-project">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="mc-head">
+              <div class="mc-num">P-07</div>
+              <div class="mc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                  <line x1="12" y1="11" x2="12" y2="17"/>
+                  <line x1="9" y1="14" x2="15" y2="14"/>
+                </svg>
+              </div>
+            </div>
+            <span class="mc-domain">MÉTHODOLOGIE & CONDUITE DE PROJET</span>
+            <h3 class="mc-title">Travail en Mode Projet</h3>
+            <ul class="mc-list">
+              <li><strong>Planification :</strong> Découpage des lots de travail (WBS), suivi des échéances (Trello) et gestion rigoureuse des priorités.</li>
+              <li><strong>Démarche Collaborative :</strong>synchronisation en binôme et communication transparente des états d'avancement.</li>
+              <li><strong>Documentation Technique &amp; Recette :</strong> Rédaction d'un rapport, procédures d'exploitation, cahiers de tests.</li>
+            </ul>
+            <div class="mc-chips">
+              <span>Gestion de Projet</span><span>Cahier des Charges</span><span>Planification</span><span>Livrables</span><span>Travail d'Équipe</span><span>Documentation</span><span>Recette</span>
+            </div>
+            <div class="mc-project-download">
+              <div class="mpd-info">
+                <span class="mpd-badge">DOSSIER COMPLET DU PROJET</span>
+                <span class="mpd-desc">Téléchargez l'archive complète des livrables, documentations techniques et bilans (format ZIP).</span>
+              </div>
+              <a href="dossier-projets.zip" download="dossier-projets-nolan-poisson.zip" class="btn-cyber btn-primary btn-sm" title="Télécharger le dossier complet des projets (archive ZIP)">
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                <span>TÉLÉCHARGER LE DOSSIER PROJET (.ZIP)</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 04 : PROJETS (DOSSIER TECHNIQUE DU CND) ==================== -->
+    <section class="section projects-section" id="projets">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 04</span>
+          <h2 class="tech-heading">RÉALISATIONS DU STAGE AU CND</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Détail des 4 sous-projets majeurs exécutés lors du stage de 7 semaines au <strong>Commissariat au numérique de défense (CND)</strong> du 18 mai au 3 juillet 2026.
+          </p>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="filter-rack">
+          <button class="filter-pill active" data-filter="all">TOUS LES PROJETS [4]</button>
+          <button class="filter-pill" data-filter="reseau">01 // RÉSEAU & CÂBLAGE</button>
+          <button class="filter-pill" data-filter="systemes">02 // SERVEURS & AD</button>
+          <button class="filter-pill" data-filter="supervision">03 // ZABBIX & GLPI</button>
+          <button class="filter-pill" data-filter="securite">04 // VPN OPNSENSE</button>
+        </div>
+
+        <!-- Projects Cards Grid -->
+        <div class="dossier-grid">
+          
+          <!-- Projet 1 : Salle de formation & câblage -->
+          <article class="dossier-card" data-category="reseau">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="dc-top">
+              <span class="dc-code">CND-PROJ // 01</span>
+              <span class="dc-badge">Réseau & Câblage</span>
+            </div>
+
+            <h3 class="dc-title">Réseau & Câblage de la Salle de Formation</h3>
+            <p class="dc-desc">
+              Conception, tirage physique et configuration complète de l'infrastructure réseau dédiée à la salle d'instruction du Commissariat au numérique de défense.
+            </p>
+
+            <div class="dc-missions">
+              <span class="dc-subhead">MISSIONS OPÉRATIONNELLES :</span>
+              <ul>
+                <li>Réalisation complète du <strong>câblage réseau cuivre RJ45</strong> et raccordement en baie de brassage.</li>
+                <li>Installation physique et paramétrage des <strong>commutateurs et routeurs HP</strong>.</li>
+                <li>Création et configuration de <strong>VLANs</strong> pour l'isolation stricte des flux stagiaires et administratifs.</li>
+              </ul>
+            </div>
+
+            <div class="dc-tags">
+              <span>Câblage RJ45</span><span>Switchs HP</span><span>Routeurs HP</span><span>VLAN</span><span>Brassage Baie</span>
+            </div>
+
+            <div class="dc-foot">
+              <button class="btn-cyber btn-outline btn-sm btn-project-detail" data-project="proj1">
+                <span>INSPECTER LE DOSSIER</span>
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Projet 2 : Infrastructure Windows Server -->
+          <article class="dossier-card" data-category="systemes">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="dc-top">
+              <span class="dc-code">CND-PROJ // 02</span>
+              <span class="dc-badge">Systèmes & AD DS</span>
+            </div>
+
+            <h3 class="dc-title">Windows Server sur Hyperviseur Lenovo</h3>
+            <p class="dc-desc">
+              Mise en service des services de domaine, d’adressage et d’authentification pour centraliser la gestion des sessions et des fichiers de formation.
+            </p>
+
+            <div class="dc-missions">
+              <span class="dc-subhead">MISSIONS OPÉRATIONNELLES :</span>
+              <ul>
+                <li>Déploiement d’une machine virtuelle <strong>Windows Server</strong> sur l’hyperviseur du serveur physique Lenovo.</li>
+                <li>Installation et configuration du contrôleur de domaine <strong>Active Directory (AD DS)</strong>.</li>
+                <li>Paramétrage des services réseau <strong>DNS</strong> et <strong>DHCP</strong>.</li>
+                <li>Mise en place d’un <strong>serveur de fichiers</strong> avec droits d’accès et arborescence sécurisée.</li>
+              </ul>
+            </div>
+
+            <div class="dc-tags">
+              <span>Serveur Lenovo</span><span>Hyperviseur</span><span>Windows Server 2019</span><span>Active Directory</span><span>DHCP / DNS</span>
+            </div>
+
+            <div class="dc-foot">
+              <button class="btn-cyber btn-outline btn-sm btn-project-detail" data-project="proj2">
+                <span>INSPECTER LE DOSSIER</span>
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Projet 3 : Supervision Zabbix & GLPI -->
+          <article class="dossier-card" data-category="supervision">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="dc-top">
+              <span class="dc-code">CND-PROJ // 03</span>
+              <span class="dc-badge">Supervision & Tickets</span>
+            </div>
+
+            <h3 class="dc-title">Supervision Zabbix & Helpdesk GLPI</h3>
+            <p class="dc-desc">
+              Hébergement des outils de surveillance proactive et de gestion du support informatique sur une machine dédiée sous système Linux.
+            </p>
+
+            <div class="dc-missions">
+              <span class="dc-subhead">MISSIONS OPÉRATIONNELLES :</span>
+              <ul>
+                <li>Installation et sécurisation d’un <strong>serveur Linux</strong> d'administration.</li>
+                <li>Déploiement de <strong>Zabbix</strong> pour la supervision de l'état des switchs HP, liaisons et serveurs.</li>
+                <li>Installation de la solution <strong>GLPI</strong> pour la gestion des tickets d'assistance et le suivi du parc.</li>
+              </ul>
+            </div>
+
+            <div class="dc-tags">
+              <span>Serveur Linux</span><span>Zabbix</span><span>Supervision</span><span>GLPI</span><span>Helpdesk IT</span>
+            </div>
+
+            <div class="dc-foot">
+              <button class="btn-cyber btn-outline btn-sm btn-project-detail" data-project="proj3">
+                <span>INSPECTER LE DOSSIER</span>
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Projet 4 : Passerelle VPN OPNsense -->
+          <article class="dossier-card" data-category="securite">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="dc-top">
+              <span class="dc-code">CND-PROJ // 04</span>
+              <span class="dc-badge">Cybersécurité & VPN</span>
+            </div>
+
+            <h3 class="dc-title">Passerelle VPN Sécurisée avec OPNsense</h3>
+            <p class="dc-desc">
+              Création d’un accès distant sécurisé et chiffré permettant d'interconnecter de façon étanche les intervenants extérieurs au réseau de formation.
+            </p>
+
+            <div class="dc-missions">
+              <span class="dc-subhead">MISSIONS OPÉRATIONNELLES :</span>
+              <ul>
+                <li>Déploiement d’un pare-feu <strong>OPNsense</strong> sur une machine virtuelle Linux.</li>
+                <li>Configuration d’un <strong>tunnel VPN</strong> chiffré pour sécuriser les accès distants.</li>
+                <li>Mise en œuvre des règles de filtrage pare-feu et contrôle strict des flux autorisés.</li>
+              </ul>
+            </div>
+
+            <div class="dc-tags">
+              <span>OPNsense</span><span>VPN</span><span>VM Linux</span><span>Pare-feu</span><span>Filtrage</span>
+            </div>
+
+            <div class="dc-foot">
+              <button class="btn-cyber btn-outline btn-sm btn-project-detail" data-project="proj4">
+                <span>INSPECTER LE DOSSIER</span>
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 05 : EXPÉRIENCES PROFESSIONNELLES ==================== -->
+    <section class="section timeline-section" id="experiences">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 05</span>
+          <h2 class="tech-heading">EXPÉRIENCES PROFESSIONNELLES</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Un parcours combinant responsabilité technique d'infrastructure de défense et rigueur opérationnelle logistique.
+          </p>
+        </div>
+
+        <div class="circuit-timeline">
+          
+          <!-- Experience 1 : Stage CND -->
+          <div class="circuit-node">
+            <div class="circuit-point">
+              <div class="node-ring"></div>
+            </div>
+            <div class="circuit-card">
+              <div class="corner corner-tl"></div>
+              <div class="corner corner-br"></div>
+              <div class="cc-header">
+                <div>
+                  <span class="cc-period">18 MAI AU 3 JUILLET 2026 // 7 SEMAINES</span>
+                  <h3 class="cc-role">Stagiaire en Administration Systèmes & Réseaux</h3>
+                  <h4 class="cc-org">Commissariat au numérique de défense (CND)</h4>
+                </div>
+                <span class="cc-type-badge badge-red">STAGE TECHNIQUE SISR</span>
+              </div>
+
+              <div class="cc-body">
+                <p>Prise en charge intégrale de la chaîne d'infrastructure réseau et serveurs de la salle de formation :</p>
+                <ul class="cc-bullet-list">
+                  <li><strong>Câblage & Réseau physique :</strong> Mise en place du réseau informatique dans la salle de formation et réalisation complète du câblage réseau.</li>
+                  <li><strong>Commutation & Routage HP :</strong> Installation et configuration des commutateurs et routeurs HP, création et gestion des VLANs.</li>
+                  <li><strong>Hyperviseur & Serveurs Lenovo :</strong> Déploiement d'une machine virtuelle Windows Server sur l'hyperviseur du serveur Lenovo.</li>
+                  <li><strong>Services Windows :</strong> Configuration complète d'Active Directory (AD DS), du DNS, du DHCP et mise en place d'un serveur de fichiers.</li>
+                  <li><strong>Administration Linux :</strong> Installation d'un serveur Linux dédié aux services d'administration et d'exploitation.</li>
+                  <li><strong>Supervision informatique :</strong> Déploiement de Zabbix pour surveiller la disponibilité des équipements et liaisons.</li>
+                  <li><strong>Gestion des tickets :</strong> Installation de la solution GLPI pour la gestion des incidents et l'inventaire du parc.</li>
+                  <li><strong>Sécurité des accès :</strong> Configuration d'un tunnel VPN sur machine virtuelle Linux avec la distribution OPNsense.</li>
+                </ul>
+              </div>
+
+              <div class="cc-tech-list">
+                <span>Switchs HP</span><span>Routeurs HP</span><span>VLAN</span><span>Serveur Lenovo</span><span>Active Directory</span><span>Linux</span><span>Zabbix</span><span>GLPI</span><span>OPNsense (VPN)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 : CDD Socoloir -->
+          <div class="circuit-node">
+            <div class="circuit-point">
+              <div class="node-ring gray"></div>
+            </div>
+            <div class="circuit-card">
+              <div class="corner corner-tl"></div>
+              <div class="corner corner-br"></div>
+              <div class="cc-header">
+                <div>
+                  <span class="cc-period">JUIN – DÉBUT JUILLET 2025 // 1 MOIS</span>
+                  <h3 class="cc-role">Employé Polyvalent (CDD)</h3>
+                  <h4 class="cc-org">Socoloir</h4>
+                </div>
+                <span class="cc-type-badge badge-muted">CDD LOGISTIQUE</span>
+              </div>
+
+              <div class="cc-body">
+                <p>Poste opérationnel demandant réactivité, précision et gestion rigoureuse des flux :</p>
+                <ul class="cc-bullet-list">
+                  <li><strong>Inventaire :</strong> Comptage et contrôle systématique de l’état des stocks et des références.</li>
+                  <li><strong>Pré-conditionnement :</strong> Préparation soignée et mise en conformité des colis et produits.</li>
+                  <li><strong>Gestion des retours clients :</strong> Traitement méthodique, diagnostic et gestion des réintégrations.</li>
+                </ul>
+              </div>
+
+              <div class="cc-tech-list">
+                <span>Rigueur</span><span>Gestion d'inventaire</span><span>Sens de l'organisation</span><span>Esprit d'équipe</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 06 : FORMATION ==================== -->
+    <section class="section edu-section" id="formation">
+      <div class="container">
+
+        <div class="section-title-wrap text-center">
+          <span class="tech-sub">// SECTION 06</span>
+          <h2 class="tech-heading">CURSUS ACADÉMIQUE</h2>
+          <div class="tech-bar center"></div>
+          <p class="tech-lead">
+            Une trajectoire cohérente liant la rigueur des sciences et de l’informatique générale (NSI & Mathématiques) à la pratique professionnelle des infrastructures (BTS SIO SISR).
+          </p>
+        </div>
+
+        <div class="edu-cockpit-grid">
+          
+          <!-- Formation 1 : BTS SIO SISR -->
+          <div class="edu-hud-card active-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="eh-status">
+              <span class="eh-dot"></span> EN COURS // 2ÈME ANNÉE
+            </div>
+            <span class="eh-period">2026 – 2027</span>
+            <h3 class="eh-degree">BTS SIO option SISR</h3>
+            <h4 class="eh-school">Lycée Benjamin Franklin — Orléans</h4>
+            <p class="eh-desc">
+              <strong>Services Informatiques aux Organisations</strong> — Option <strong>Solutions d'Infrastructure, Systèmes et Réseaux</strong>. Formation supérieure experte dans l'administration, la virtualisation, l'interconnexion réseau et la sécurisation des infrastructures numériques.
+            </p>
+            <div class="eh-points">
+              <h5>COMPÉTENCES CLÉS DÉVELOPPÉES :</h5>
+              <ul>
+                <li>Administration de serveurs Windows Server (AD DS, GPO) et Linux.</li>
+                <li>Configuration de commutateurs et routeurs Cisco / HP, VLANs, STP.</li>
+                <li>Virtualisation d'infrastructures avec Nutanix et machines virtuelles.</li>
+                <li>Cybersécurité, VPN OPNsense, ACLs et application du RGPD.</li>
+                <li>Supervision Zabbix et gestion d'assistance GLPI.</li>
+                <li>Travailler en mode projet et documentation technique.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Formation 2 : Baccalauréat Général -->
+          <div class="edu-hud-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="eh-status valid">
+              <span class="eh-dot green"></span> DIPLÔME OBTENU EN 2025
+            </div>
+            <span class="eh-period">Obtenu en 2025</span>
+            <h3 class="eh-degree">Baccalauréat Général</h3>
+            <h4 class="eh-school">Lycée Benjamin Franklin — Orléans</h4>
+            <p class="eh-desc">
+              Spécialités : <strong>Numérique et Sciences Informatiques (NSI)</strong> et <strong>Mathématiques</strong>. Acquisition des fondements en logique binaire, algorithmique, programmation, bases de données et modélisation formelle.
+            </p>
+            <div class="eh-points">
+              <h5>ACQUIS FONDAMENTAUX :</h5>
+              <ul>
+                <li>Architecture matérielle, systèmes d'exploitation et protocoles web.</li>
+                <li>Algorithmique, programmation modulaire et structures de données.</li>
+                <li>Modélisation relationnelle et requêtes SQL.</li>
+                <li>Raisonnement logique, méthode d'analyse et résolution de problèmes.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 07 : VEILLE INFORMATIQUE (IA & CYBERSÉCURITÉ) ==================== -->
+    <section class="section veille-section" id="veille">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 07 // VEILLE TECHNOLOGIQUE &amp; INFORMATIQUE</span>
+          <h2 class="tech-heading">COMMENT L'IA TRANSFORME-T-ELLE LES CYBERATTAQUES ET LEUR DÉFENSE ?</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Surveillance et analyse des impacts de l'Intelligence Artificielle sur la sécurité des systèmes d'information : de l'industrialisation des cyberattaques (ingénierie sociale par LLM, malwares polymorphes) à la modernisation des défenses SISR (EDR comportementaux, SOC automatisés et cadre NIS 2), collectées et traitées via les agrégateurs de flux RSS <strong>Feedly</strong> et <strong>Feeder</strong>.
+          </p>
+        </div>
+
+        <!-- Cartouche Méthodologique & Outils de Veille (Obligation BTS SIO) -->
+        <div class="veille-methodo-box">
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-br"></div>
+          
+          <div class="vmb-header">
+            <div class="vmb-title-group">
+              <span class="vmb-badge">CADRE MÉTHODOLOGIQUE</span>
+              <h3 class="vmb-title">VEILLE TECHNOLOGIQUE &amp; OUTILS DE COLLECTE</h3>
+            </div>
+            <div class="vmb-status">
+              <span class="pulse-dot"></span>
+              <span class="vmb-status-text">AGRÉGATION RSS ACTIVE // FEEDLY &amp; FEEDER</span>
+            </div>
+          </div>
+
+          <div class="vmb-grid">
+            
+            <div class="vmb-col">
+              <div class="vmb-col-num">01</div>
+              <h4 class="vmb-col-title">Outils de Collecte : Feedly &amp; Feeder</h4>
+              <p class="vmb-col-desc">
+                Agrégation centralisée et continue des flux RSS de cybersécurité via les outils <strong>Feedly</strong> et <strong>Feeder</strong>. Classement en dossiers thématiques prioritaires (<em>Menaces IA</em>, <em>Cyberdéfense SISR</em>, <em>Réglementation</em>) pour assurer un suivi quotidien des vulnérabilités émergentes.
+              </p>
+              <div class="vmb-tags">
+                <span>Feedly RSS</span><span>Feeder RSS</span><span>Agrégateurs Web &amp; Mobile</span><span>Dossiers Thématiques</span>
+              </div>
+            </div>
+
+            <div class="vmb-col">
+              <div class="vmb-col-num">02</div>
+              <h4 class="vmb-col-title">Sources Spécialisées Surveillées</h4>
+              <p class="vmb-col-desc">
+                Abonnement aux flux RSS d'organismes de référence et médias spécialisés : <strong>The Hacker News</strong>, <strong>ANSSI / CERT-FR</strong>, <strong>ZDNet Cyber</strong>, <strong>LeMagIT</strong>, <strong>Mandiant Threat Intelligence</strong> et <strong>BleepingComputer</strong>.
+              </p>
+              <div class="vmb-tags">
+                <span>The Hacker News</span><span>ANSSI / CERT-FR</span><span>ZDNet</span><span>LeMagIT</span><span>Mandiant</span>
+              </div>
+            </div>
+
+            <div class="vmb-col">
+              <div class="vmb-col-num">03</div>
+              <h4 class="vmb-col-title">Filtrage par Mots-Clés Ciblés</h4>
+              <p class="vmb-col-desc">
+                Paramétrage de règles d'alerte et filtres de recherche sur des mots-clés stratégiques : <em>WormGPT</em>, <em>LLM phishing</em>, <em>malware polymorphe</em>, <em>BlackMamba</em>, <em>EDR Machine Learning</em>, <em>Zero Trust</em>, <em>Directive NIS 2</em>.
+              </p>
+              <div class="vmb-tags">
+                <span>WormGPT</span><span>BlackMamba</span><span>EDR ML</span><span>Zero Trust</span><span>NIS 2</span>
+              </div>
+            </div>
+
+            <div class="vmb-col">
+              <div class="vmb-col-num">04</div>
+              <h4 class="vmb-col-title">Sélection Critique de 3 Articles</h4>
+              <p class="vmb-col-desc">
+                Synthèse et qualification de l'information : sélection de <strong>3 articles majeurs</strong> répondant précisément à la problématique, avec analyse technique approfondie et transposition directe pour l'administrateur système et réseau.
+              </p>
+              <div class="vmb-tags">
+                <span>3 Articles Clés</span><span>Analyse SISR</span><span>Impact Infrastructure</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section des 3 Articles de Référence -->
+        <div class="veille-articles-intro">
+          <div class="vai-badge">// SÉLECTION OFFICIELLE // 3 ARTICLES DE RÉFÉRENCE</div>
+          <h3 class="vai-title">Les 3 Articles Majeurs de la Veille (Feedly &amp; Feeder)</h3>
+          <p class="vai-desc">
+            Analyse détaillée de trois publications spécialisées collectées via mes agrégateurs RSS Feedly et Feeder sur la thématique de l'IA dans les cyberattaques et leur défense.
+          </p>
+        </div>
+
+        <div class="veille-articles-grid">
+
+          <!-- ================= ARTICLE 1 ================= -->
+          <article class="veille-article-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            
+            <div class="vac-header">
+              <span class="vac-tool-badge feedly">
+                <span class="vac-dot">●</span> COLLECTÉ VIA FEEDER
+              </span>
+              <span class="vac-num">ARTICLE 01</span>
+            </div>
+
+            <div class="vac-source-bar">
+              <span class="source-name">https://www.pesesurstart.com/2026/10/14/ia-225-chercheurs-reclament-des-changements-immediats-pour-prevenir-des-incidents-majeurs</span>
+              <span class="source-sep">•</span>
+              <span class="source-date">Flux RSS Feeder</span>
+            </div>
+
+            <h4 class="vac-title">IA: 225 chercheurs réclament des «changements immédiats» pour prévenir des incidents majeurs</h4>
+
+            <p class="vac-summary">
+             Face à la multiplication d'évasions de modèles d'IA (OpenAI, Anthropic, Meta) et à des intrusions comme celle sur Hugging Face, 225 experts internationaux dont Yoshua Bengio et Geoffrey Hinton réclament des mesures urgentes en dénonçant des lacunes majeures de cybersécurité et d'alignement. Avertissant du danger imminent pour les infrastructures critiques, ils préconisent un confinement strict par isolation totale d'Internet (« air gap ») ainsi que la création d'un organisme international de régulation pour fixer des normes et signaler les failles, alors que les géants américains de la tech tentent d'éviter toute contrainte légale en privilégiant de simples engagements volontaires avec la Maison-Blanche.
+            </p>
+
+            
+
+            <div class="vac-chips">
+              <span>Feedly</span><span>OpenAI</span><span>Hugging Face</span><span>Anthropic</span><span>Meta</span><span>Intrusions</span>
+            </div>
+          </article>
+
+          <!-- ================= ARTICLE 2 ================= -->
+          <article class="veille-article-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            
+            <div class="vac-header">
+              <span class="vac-tool-badge feeder">
+                <span class="vac-dot">●</span> COLLECTÉ VIA FEEDER
+              </span>
+              <span class="vac-num">ARTICLE 02</span>
+            </div>
+
+            <div class="vac-source-bar">
+              <span class="source-name">https://infos-it.fr/english/9795/ai-is-rewriting-cybersecurity-in-2026-and-hackers-are-using-the-same-playbook/</span>
+              <span class="source-sep">•</span>
+              <span class="source-date">Flux RSS Feeder</span>
+            </div>
+
+            <h4 class="vac-title">l’IA réécrit la cybersécurité en 2026, et les pirates utilisent le même Playbook</h4>
+
+            <p class="vac-summary">
+              En 2026, l'intelligence artificielle redéfinit la cybersécurité en faisant passer la défense d'un modèle réactif traditionnel , dépassé par des attaques toujours plus rapides , à une protection en temps réel capable d'analyser le comportement des réseaux pour bloquer les menaces inédites (zero-day) et le code polymorphe. Cependant, cette avancée crée une véritable course aux armements, car les cybercriminels exploitent ces mêmes technologies pour automatiser la reconnaissance des réseaux, générer des e-mails de phishing hyper-ciblés et concevoir des deepfakes convaincants pour usurper l'identité de dirigeants. Face à cette menace bivalente , une  stratégie efficace repose sur une approche hybride associant la rapidité de l'IA au discernement des analystes humains, le tout appuyé par une infrastructure bien segmentée et des budgets d'intégration accessibles aux PME (d'un coût d'implémentation estimé entre 5 000 € et 50 000 €, ou via des abonnements SaaS dès 200 € par mois).
+            </p>
+
+            <div class="vac-chips">
+              <span>Feeder</span><span>Zéro Day</span><span>code polymorphe</span><span>Hybride</span><span>IA</span><span>Pirates</span>
+            </div>
+          </article>
+
+          <!-- ================= ARTICLE 3 ================= -->
+          <article class="veille-article-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            
+            <div class="vac-header">
+              <span class="vac-tool-badge feedly">
+                <span class="vac-dot">●</span> COLLECTÉ VIA FEEDLY
+              </span>
+              <span class="vac-num">ARTICLE 03</span>
+            </div>
+
+            <div class="vac-source-bar">
+              <span class="source-name">https://securityaffairs.com/194913/ai/cisa-deploys-anthropics-mythos-ai-to-hunt-vulnerabilities-in-u-s-government-code.html</span>
+              <span class="source-sep">•</span>
+              <span class="source-date">Flux RSS Feedly</span>
+            </div>
+
+            <h4 class="vac-title">La CISA déploie l’IA Mythos d’Anthropic pour chasser les vulnérabilités aux États-Unis. Code du gouvernement</h4>
+
+            <p class="vac-summary">
+              La CISA (Agence américaine de cybersécurité et de sécurité des infrastructures) a déployé le modèle d'intelligence artificielle Mythos Preview d'Anthropic pour auditer le code des systèmes gouvernementaux fédéraux et détecter rapidement les failles critiques. Lors de tests sur des infrastructures classifiées, cette IA de pointe a permis d'identifier des vulnérabilités complexes en quelques heures seulement au lieu de plusieurs semaines, soulignant son efficacité pour renforcer la sécurité nationale face aux cybermenaces, malgré les débats sensibles liés au double usage des technologies offensives et défensives.
+            </p>
+
+            <div class="vac-chips">
+              <span>Feedly</span><span>CISA</span><span>Mythos</span><span>sécurité</span><span>Vulnérabilités</span><span>Cybermenaces</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 08 : QUALITÉS & LANGUES ==================== -->
+    <section class="section ql-section" id="qualites-langues">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 08</span>
+          <h2 class="tech-heading">QUALITÉS PERSONNELLES & LANGUES</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Les compétences relationnelles et linguistiques essentielles pour collaborer en équipe et appréhender les documentations techniques d'infrastructure.
+          </p>
+        </div>
+
+        <div class="ql-split-layout">
+          
+          <!-- Colonne Qualités Personnelles -->
+          <div class="ql-col">
+            <div class="ql-col-header">
+              <span class="ql-icon-num">01</span>
+              <div>
+                <h3>Qualités Personnelles</h3>
+                <span class="ql-col-sub">Savoir-être professionnel</span>
+              </div>
+            </div>
+
+            <div class="qualities-tech-list">
+              
+              <div class="qt-item">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="qt-badge">VALEUR 01</div>
+                <h4>Esprit d’équipe</h4>
+                <p>Collaboration fluide et constructive lors des opérations réseau en binôme, partage transparent des informations et entraide active.</p>
+              </div>
+
+              <div class="qt-item">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="qt-badge">VALEUR 02</div>
+                <h4>Curiosité</h4>
+                <p>Veille technologique continue sur les matériels réseau, les distributions serveurs et les pratiques émergentes de cybersécurité.</p>
+              </div>
+
+              <div class="qt-item">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="qt-badge">VALEUR 03</div>
+                <h4>Capacité d’adaptation</h4>
+                <p>Prise en main efficace et rapide de nouveaux environnements matériels (HP, Cisco, Lenovo) et logiciels (Nutanix, OPNsense, Zabbix).</p>
+              </div>
+
+              <div class="qt-item">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="qt-badge">VALEUR 04</div>
+                <h4>Sens de l’organisation & Envie d’apprendre</h4>
+                <p>Rigueur dans l’application des configurations en production, tenue ordonnée des documentations et désir constant de progresser.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Colonne Langues -->
+          <div class="ql-col">
+            <div class="ql-col-header">
+              <span class="ql-icon-num">02</span>
+              <div>
+                <h3>Compétences Linguistiques</h3>
+                <span class="ql-col-sub">Communication & Documentation technique</span>
+              </div>
+            </div>
+
+            <div class="languages-tech-list">
+              
+              <!-- Anglais -->
+              <div class="lang-meter-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="lmc-head">
+                  <div class="lmc-flag">🇬🇧</div>
+                  <div>
+                    <h4>Anglais</h4>
+                    <span class="lmc-level">Niveau B1 (Opérationnel & Technique)</span>
+                  </div>
+                </div>
+                
+                <div class="lmc-bar-track">
+                  <div class="lmc-bar-fill" style="width: 65%;"></div>
+                </div>
+
+                <p class="lmc-desc">
+                  Compréhension fluide des documentations officielles de constructeurs (Cisco, HP, Microsoft, Nutanix, OPNsense), utilisation des interfaces de paramétrage en anglais et communication professionnelle.
+                </p>
+              </div>
+
+              <!-- Espagnol -->
+              <div class="lang-meter-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="lmc-head">
+                  <div class="lmc-flag">🇪🇸</div>
+                  <div>
+                    <h4>Espagnol</h4>
+                    <span class="lmc-level">Niveau A2 (Notions Élémentaires)</span>
+                  </div>
+                </div>
+
+                <div class="lmc-bar-track">
+                  <div class="lmc-bar-fill" style="width: 35%;"></div>
+                </div>
+
+                <p class="lmc-desc">
+                  Notions élémentaires et capacité à comprendre des expressions quotidiennes et professionnelles simples.
+                </p>
+              </div>
+
+              <!-- CV Fast Download Banner -->
+              <div class="cv-hud-banner">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="chb-text">
+                  <h4>Curriculum Vitae complet en version PDF</h4>
+                  <p>Retrouvez toutes ces informations synthétisées sur mon document officiel téléchargeable.</p>
+                </div>
+                <a href="cv.html" class="btn-cyber btn-primary btn-sm">
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                  <span>TÉLÉCHARGER LE CV</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 09 : PARTAGE (ENSEIGNEMENTS DE LA VEILLE) ==================== -->
+    <section class="section partage-section" id="partage">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 09</span>
+          <h2 class="tech-heading">PARTAGE &amp; ENSEIGNEMENTS DE LA VEILLE</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Synthèse des connaissances et des compétences développées grâce à ma veille informatique : ce que mes découvertes sur l'IA et la cybersécurité m'ont appris et comment elles transforment ma vision d'administrateur SISR.
+          </p>
+        </div>
+
+        <!-- Cockpit Header Banner -->
+        <div class="partage-intro-banner">
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-br"></div>
+          <div class="pib-hud-header">
+            <span class="vmb-badge">SYNTHÈSE </span>
+            <span class="pib-code">VEILLE-IA-CYBER // ENSEIGNEMENTS CLÉS</span>
+          </div>
+          <h3 class="pib-main-title">Ce que mes Recherches de Veille m'ont Appris</h3>
+          <p class="pib-main-text">
+            Dans le cadre de mon parcours en BTS SIO SISR et de mon futur métier , la veille technologique est devenu un atout majeur pour <strong>anticiper les menaces</strong>, <strong>consolider les architectures réseau</strong> et enrichir continuellement mes compétences professionnelles. Voici la synthèse des enseignements majeurs tirés de mes recherches sur l'intelligence artificielle appliquée à la cybersécurité.
+          </p>
+        </div>
+
+        <!-- 4 Cartes : Ce que j'ai appris de ma veille -->
+        <div class="partage-subheading">
+          <span class="ps-tag">// ANALYSE</span>
+          <h3 class="ps-title">Ce que ma Veille Informatique m'a appris</h3>
+        </div>
+
+        <div class="partage-grid">
+
+          <!-- Carte 1 -->
+          <div class="partage-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="pc-head">
+              <span class="pc-badge">ACQUIS 01 // </span>
+              <div class="pc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+            </div>
+            <h4 class="pc-title">Les lacunes majeures en cybersécurité</h4>
+            <div class="pc-body">
+              <div class="pc-insight">
+                <span class="pci-label">CE QUE J'AI TROUVÉ &amp; APPRIS :</span>
+                <p>
+                  La multiplication des évasions des modèles d'IA avertissent d'un danger iminent pour les infrastructures critiques , il y a un besoin de confinement strict par isolement total d'internet (air gap) ainsi que la création d'un organisme de régulation.
+                </p>
+              </div>
+            </div>
+            <div class="pc-chips">
+              <span>Isolement</span><span>évasions</span><span>Danger</span><span>Air gap</span>
+            </div>
+          </div>
+
+          <!-- Carte 2 -->
+          <div class="partage-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="pc-head">
+              <span class="pc-badge">ACQUIS 02 //</span>
+              <div class="pc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+            </div>
+            <h4 class="pc-title">L'IA redéfinit la cybersécurité</h4>
+            <div class="pc-body">
+              <div class="pc-insight">
+                <span class="pci-label">CE QUE J'AI TROUVÉ &amp; APPRIS :</span>
+                <p>
+                  L'IA permet désormais d'avoir une protection en temps réel capable d'analyser le comportement des réseaux pour bloquer les menaces inédites (zero-day) et le code polymorphe.Cependant les cybercriminels exploitent les mêmes technologies pour automatiser la reconnaissance de failles , généré du phishing hyper-ciblé et concevoir des deepfakes convaincants. 
+                </p>
+              </div>
+             
+            </div>
+            <div class="pc-chips">
+              <span>Zéeo-Day</span><span>Code Polymorphe</span><span>Automatiser</span><span>Ciblé</span>
+            </div>
+          </div>
+
+          <!-- Carte 3 -->
+          <div class="partage-card">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-br"></div>
+            <div class="pc-head">
+              <span class="pc-badge">ACQUIS 03 //</span>
+              <div class="pc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+              </div>
+            </div>
+            <h4 class="pc-title">L'IA déja employé par le gouvernement pour mieux se défendre</h4>
+            <div class="pc-body">
+              <div class="pc-insight">
+                <span class="pci-label">CE QUE J'AI TROUVÉ &amp; APPRIS :</span>
+                <p>
+                 Le modèle Mythos Preview d'Anthropic deployé par la CISA (Agence américaine de cybersécurité) a permis d'identifier des vulnérabilités complexes en quelques heures seulement au lieu de plusieurs semaines.Cela souligne son efficacité pour renforcer la sécurité nationale face aux cybermenaces, malgré les débats sensibles liés au double usage des technologies offensives et défensives. 
+                </p>
+              </div>
+            </div>
+            <div class="pc-chips">
+              <span>Mythos</span><span>Défense</span><span>Identifier</span><span>Vulnérabilités complexes</span>
+            </div>
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 10 : CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-title-wrap">
+          <span class="tech-sub">// SECTION 10</span>
+          <h2 class="tech-heading">PRISE DE CONTACT</h2>
+          <div class="tech-bar"></div>
+          <p class="tech-lead">
+            Vous avez un projet d'infrastructure, une offre de stage, d'alternance ou une opportunité d'emploi pour un profil SISR motivé ? Discutons-en.
+          </p>
+        </div>
+
+        <div class="contact-hud-layout">
+          
+          <!-- Contact Direct Coordinates -->
+          <div class="contact-coord-col">
+            <h3 class="col-title">Canaux de communication</h3>
+            <p class="col-lead">
+              N'hésitez pas à me joindre directement via téléphone, email ou LinkedIn. Je consulte régulièrement mes messages.
+            </p>
+
+            <div class="coord-cards">
+              
+              <!-- Ville -->
+              <div class="coord-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="cc-ico">📍</div>
+                <div class="cc-info">
+                  <span class="cc-type">LOCALISATION</span>
+                  <strong class="cc-value">Orléans (45), France</strong>
+                  <span class="cc-desc">Région Centre-Val de Loire</span>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="coord-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="cc-ico">✉️</div>
+                <div class="cc-info">
+                  <span class="cc-type">COURRIEL PROFESSIONNEL</span>
+                  <a href="mailto:nolpoisson@gmail.com" class="cc-value-link">nolpoisson@gmail.com</a>
+                  <button class="btn-copy-mini" data-copy="nolpoisson@gmail.com" title="Copier l'adresse email">
+                    [COPIER]
+                  </button>
+                </div>
+              </div>
+
+              <!-- Téléphone -->
+              <div class="coord-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="cc-ico">📞</div>
+                <div class="cc-info">
+                  <span class="cc-type">LIGNE TÉLÉPHONIQUE</span>
+                  <a href="tel:0631901505" class="cc-value-link">06 31 90 15 05</a>
+                  <button class="btn-copy-mini" data-copy="06 31 90 15 05" title="Copier le numéro">
+                    [COPIER]
+                  </button>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="coord-card">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-br"></div>
+                <div class="cc-ico">🔗</div>
+                <div class="cc-info">
+                  <span class="cc-type">RÉSEAU PROFESSIONNEL</span>
+                  <strong class="cc-value">Nolan Poisson</strong>
+                  <span class="cc-desc">Profil LinkedIn</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- CV Download Action -->
+            <div class="coord-cv-box">
+              <a href="cv.html" class="btn-cyber btn-outline w-100">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>TÉLÉCHARGER LE CV COMPLET (PDF)</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        
+        <div class="fg-brand">
+          <h4>Nolan Poisson</h4>
+          <p>Étudiant en 2ème année de BTS SIO option SISR au lycée Benjamin Franklin à Orléans. Futur administrateur systèmes et réseaux.</p>
+        </div>
+
+        <div class="fg-nav">
+          <span class="fg-title">INDEX // NAVIGATION</span>
+          <ul>
+            <li><a href="#hero">01 // Accueil</a></li>
+            <li><a href="#about">02 // À propos</a></li>
+            <li><a href="#competences">03 // Compétences</a></li>
+            <li><a href="#projets">04 // Stage CND</a></li>
+            <li><a href="#experiences">05 // Expériences</a></li>
+            <li><a href="#formation">06 // Formation</a></li>
+            <li><a href="#veille">07 // Veille informatique</a></li>
+            <li><a href="#qualites-langues">08 // Langues & Qualités</a></li>
+            <li><a href="#partage">09 // Partage & Enseignements</a></li>
+            <li><a href="#contact">10 // Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="fg-contact">
+          <span class="fg-title">CONTACT // DIRECT</span>
+          <p>📍 Orléans, France</p>
+          <p>✉️ <a href="mailto:nolpoisson@gmail.com">nolpoisson@gmail.com</a></p>
+          <p>📞 <a href="tel:0631901505">06 31 90 15 05</a></p>
+          <p>🔗 LinkedIn : Nolan Poisson</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bar">
+        <div class="fb-copy">
+          © 2026 Nolan Poisson. Conçu pour l'ingénierie systèmes & réseaux.
+        </div>
+        <div class="fb-links">
+          <a href="cv.html" class="fb-link">CV_PDF</a>
+          <a href="#hero" class="fb-link back-to-top">RETOUR EN HAUT ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL DE DÉTAIL PROJET ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-br"></div>
+      <div class="modal-header">
+        <div class="modal-badge" id="modal-badge">RÉSEAU & CÂBLAGE</div>
+        <button class="modal-close" id="modal-close" aria-label="Fermer la modale">✕</button>
+      </div>
+      <div class="modal-body">
+        <h3 id="modal-title">Titre du projet</h3>
+        <span class="modal-org" id="modal-org">Commissariat au numérique de défense (CND)</span>
+        
+        <div class="modal-content-inner" id="modal-description">
+          <!-- Injecté dynamiquement par JavaScript -->
+        </div>
+
+        <div class="modal-meta-grid" id="modal-meta">
+          <!-- Badges techniques -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cyber btn-outline btn-sm" id="modal-close-btn">FERMER</button>
+        <a href="#contact" class="btn-cyber btn-primary btn-sm" id="modal-contact-btn">DISCUTER DU PROJET</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
