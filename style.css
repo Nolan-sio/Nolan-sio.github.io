@@ -90,7 +90,7 @@ body.cyber-body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ambiance d'arrière-plan douce */
+/* Ambiance d'arrière-plan douce & trame cyber */
 body.cyber-body::before {
   content: '';
   position: fixed;
@@ -98,8 +98,24 @@ body.cyber-body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(circle at 50% -10%, rgba(59, 130, 246, 0.07) 0%, transparent 65%);
+  background: 
+    radial-gradient(circle at 50% -10%, rgba(59, 130, 246, 0.08) 0%, transparent 65%),
+    radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
   pointer-events: none;
+  z-index: 0;
+}
+
+body.cyber-body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(rgba(59, 130, 246, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  opacity: 0.35;
   z-index: 0;
 }
 
@@ -139,6 +155,7 @@ body.cyber-body::before {
 .section {
   padding: 6.5rem 0;
   position: relative;
+  z-index: 1;
 }
 
 /* Coin technologique (Corner Brackets) */
@@ -612,6 +629,15 @@ body.cyber-body::before {
   position: relative;
   overflow: hidden;
   padding: 4rem 0 5rem;
+  background-color: var(--bg-main);
+  background-image: 
+    linear-gradient(180deg, rgba(10, 14, 23, 0.76) 0%, rgba(10, 14, 23, 0.86) 60%, var(--bg-main) 100%),
+    radial-gradient(ellipse at 50% 25%, rgba(59, 130, 246, 0.22) 0%, transparent 70%),
+    url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .cyber-grid-canvas {
@@ -1051,7 +1077,14 @@ body.cyber-body::before {
    SECTION 02 : À PROPOS (CYBER BENTO GRID)
    ========================================================================== */
 .bento-section {
-  background: var(--bg-secondary);
+  background-color: var(--bg-secondary);
+  background-image: 
+    linear-gradient(180deg, var(--bg-main) 0%, rgba(15, 23, 42, 0.88) 12%, rgba(15, 23, 42, 0.90) 88%, var(--bg-main) 100%),
+    url('images/cyber-grid.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bento-grid {
@@ -1294,7 +1327,14 @@ body.cyber-body::before {
    SECTION 03 : COMPÉTENCES (MATRICE TECHNIQUE)
    ========================================================================== */
 .skills-section {
-  background: var(--bg-main);
+  background-color: var(--bg-main);
+  background-image: 
+    linear-gradient(180deg, var(--bg-main) 0%, rgba(10, 14, 23, 0.91) 12%, rgba(10, 14, 23, 0.93) 88%, var(--bg-secondary) 100%),
+    url('images/tech-circuit.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .matrix-grid {
@@ -1305,6 +1345,8 @@ body.cyber-body::before {
 
 .matrix-card {
   background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
   padding: 1.85rem;
@@ -1497,7 +1539,14 @@ body.cyber-body::before {
    SECTION 04 : PROJETS (DOSSIER DU STAGE AU CND)
    ========================================================================== */
 .projects-section {
-  background: var(--bg-secondary);
+  background-color: var(--bg-secondary);
+  background-image: 
+    linear-gradient(180deg, var(--bg-secondary) 0%, rgba(15, 23, 42, 0.88) 12%, rgba(15, 23, 42, 0.91) 88%, var(--bg-main) 100%),
+    url('images/network-switch.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .filter-rack {
@@ -1541,6 +1590,8 @@ body.cyber-body::before {
 
 .dossier-card {
   background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
   padding: 2.25rem;
@@ -1849,7 +1900,14 @@ body.cyber-body::before {
    SECTION 06 : FORMATION ACADÉMIQUE
    ========================================================================== */
 .edu-section {
-  background: var(--bg-secondary);
+  background-color: var(--bg-secondary);
+  background-image: 
+    linear-gradient(180deg, var(--bg-main) 0%, rgba(15, 23, 42, 0.90) 12%, rgba(15, 23, 42, 0.92) 88%, var(--bg-main) 100%),
+    url('images/server-rack.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .edu-cockpit-grid {
@@ -1861,6 +1919,8 @@ body.cyber-body::before {
 
 .edu-hud-card {
   background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
   padding: 2.5rem;
@@ -2383,7 +2443,14 @@ body.cyber-body::before {
    SECTION 10 : CONTACT (CYBER DOCK)
    ========================================================================== */
 .contact-section {
-  background: var(--bg-secondary);
+  background-color: var(--bg-secondary);
+  background-image: 
+    linear-gradient(180deg, var(--bg-main) 0%, rgba(15, 23, 42, 0.91) 12%, rgba(15, 23, 42, 0.94) 88%, var(--bg-main) 100%),
+    url('images/datacenter-corridor.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .contact-hud-layout {
@@ -2884,11 +2951,18 @@ body.cyber-body::before {
    SECTION 07 : VEILLE TECHNOLOGIQUE & INFORMATIQUE (IA & CYBERSÉCURITÉ)
    ========================================================================== */
 .veille-section {
-  background: radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.04) 0%, transparent 60%),
-              radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.03) 0%, transparent 60%),
-              var(--bg-main);
   position: relative;
   overflow: hidden;
+  background-color: var(--bg-main);
+  background-image: 
+    linear-gradient(180deg, var(--bg-secondary) 0%, rgba(10, 14, 23, 0.90) 12%, rgba(10, 14, 23, 0.92) 88%, var(--bg-secondary) 100%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 60%),
+    url('images/cyber-code.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* --- Cartouche Méthodologique --- */
@@ -3243,6 +3317,16 @@ body.cyber-body::before {
    RESPONSIVE DESIGN (BREAKPOINTS)
    ========================================================================== */
 @media (max-width: 1024px) {
+  .hero-section,
+  .bento-section,
+  .skills-section,
+  .projects-section,
+  .edu-section,
+  .veille-section,
+  .contact-section {
+    background-attachment: scroll !important;
+  }
+
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 3.5rem;
